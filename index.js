@@ -1,10 +1,7 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
 var app = express();
-var loggedIn = false;
-var session = require('express-session');
 var bodyParser = require('body-parser');
-var flash = require('connect-flash');
 
 //
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
