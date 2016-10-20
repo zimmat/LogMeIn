@@ -1,13 +1,17 @@
-<h1>login</h1>
+<div class="login">
 
+  {{#if msg}}
+    <div class="message">
+      {{msg}}
+    </div>
+  {{/if}}
 
-{{#if msg}}
-<div class="message">
-    {{msg}}
+  <form class="" action="/login" method="post">
+    <input type="text" name="username" value="{{username}}" placeholder="username">
+    <input type="password" name= "password" value="{{password}}"placeholder="password" >
+   <input type="submit"><br><a href="/register" class="btn btn-info" role="button">register</a>
+   <br><a href="/users" class="btn btn-info" role="button">users</a>
+     <p id='warning'>{{messages.warning}}</p>
 </div>
-{{/if}}
 
-<form class="" action="/login" method="post">
-    <input type="text" name="username" value="" placeholder="username">
-    <input type="submit" name="name" value="login">
-</form>
+  </form>

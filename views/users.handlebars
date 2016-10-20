@@ -1,0 +1,20 @@
+
+<table>
+  <tr>
+    <<th>User_id</th>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+  <tr>
+    {{#users}}
+    <td>{{user_id}}</td>
+    <td>{{username}}</td>
+    <td>{{password}}</td>
+    </tr>
+    {{/users}}
+  </tr>
+</table>
+<a href="/register" class="btn btn-info" role="button">register</a>
+<input type="submit"><br><a href="/login" class="btn btn-info" role="button">login</a>
+</body>
+</html>
